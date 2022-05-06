@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passinho do Romano</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<script src="index.js"></script>
+
+<body>
+    <header>
+        <div>
+            <h1 class="titulo">Passinho do Romano</h1>
+        </div>
+    </header>
+    <main>
+        <form class="container">
+            <label class="subtitulo">Digite algo para ser codificado ou decodificado:</label>
+            <div class="box">
+                
+                <textarea placeholder="Digite aqui seu texto" class="text" name="texto" id="text" cl cols="70"
+                    rows="6"></textarea>
+                    <textarea class="text" name="texto" id="textResult" cl cols="70" rows="6" readonly></textarea>
+            </div>
+            <div class="select">
+                <div class="selecao">
+                    <label for="quantidade">Ecolha um tipo:</label>
+                    <select name="encodeSelection" id="escolhaForma" class="escolhaForma">
+                        <option value="empty"></option>
+                        <option disabled selected value>-Selecione uma opção-</option>
+                        <option value="cifra">Cifra de César</option>
+                        <option value="Base64">Base64</option>
+                    </select>
+                </div>
+                <div id="input">
+                    <input type="radio" id="codeId" name="selection" value="encode">
+                    <label for="code">Codificar</label><br>
+                    <input type="radio" id="decodeId" name="selection" value="decode">
+                    <label for="encode">Decodificar</label><br>
+                </div>
+                <div class="valores" id="valores">
+                    <label for="quantity">Defina um valor:</label>
+                    <input type="number" id="quantity" class="quantity" name="quantity" min="0" max="100">
+                </div>
+            </div>
+            <div class="btnDiv" id="btnDiv">
+            </div>
+        </form>
+    </main>
+
+    <footer class="fixed-footer">
+        <span>Desenvolvido por Felipe Daniel - Somente para fins
+             didáticos.</span>
+        <div class="footerFlex">
+            <a href=""><img class="footerIcon" src="" alt="linkedin "></a>
+            <a href=""><img class="footerIcon" src="" alt="github "></a>
+        </div>
+        </footer>
+    
+    <script src="./index.js"></script>
+</body>
+
+</html>
